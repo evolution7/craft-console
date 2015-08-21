@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+// To create a task, see http://spin.atomicobject.com/2015/06/16/craft-console-plugin/
+
+// Composer
+if (file_exists(__DIR__ . '/../../../../vendor/autoload.php')) {
+    require_once(__DIR__ . '/../../../../vendor/autoload.php');
+}
+
+// Yii command runner
+require_once(__DIR__ . '/../../../app/etc/console/yiic.php');
