@@ -7,6 +7,5 @@ Command/Task runner for Craft CMS. This enables you to run Craft's commands from
 From the project root, run:
 
 ```
-bin/craft-runner
+bin/console
 ```
-
