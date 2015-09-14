@@ -1,10 +1,10 @@
 <?php
 namespace Craft;
 
-class PackageCommand extends BaseCommand
+class SyncCommand extends BaseCommand
 {
 
-    public function actionSync()
+    public function actionPlugin()
     {
         echo "Synchronizing plugins\n";
         $requiredPlugins = array_merge(['Console'], craft()->config->get('activePlugins', 'plugins'));
@@ -38,4 +38,5 @@ class PackageCommand extends BaseCommand
             }
         }
     }
+
 }
