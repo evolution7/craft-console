@@ -15,7 +15,15 @@ composer require evolution7/craft-console
 From the project root, run:
 
 ```
-bin/console
+vendor/bin/console
+```
+
+Alternatively, you can specify a `bin` folder in `composer.json` and call the executable from there (`$projectRoot/bin/console`).
+
+```
+    "config": {
+        "bin-dir": "bin"
+    },
 ```
 
 This will give you a list of available commands.
