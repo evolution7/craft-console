@@ -7,6 +7,9 @@ class SyncCommand extends BaseCommand
     public function actionPlugin()
     {
         echo "Synchronizing plugins\n";
+        if (!craft()->config->exists('activePlugins', 'plugins')) {
+            echo "You need to specify plugins in craft/config/plugins.php before using this functionality.\n";
+        }
         $requiredPlugins = array_merge(['Console'], craft()->config->get('activePlugins', 'plugins'));
         $currentPlugins = craft()->plugins->getPlugins(false);
 
