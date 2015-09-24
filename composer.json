@@ -1,7 +1,7 @@
 {
     "name": "evolution7/craft-console",
     "description": "CLI for CraftCMS.",
-    "homepage": "https://bitbucket.org/evolution7/craft_console",
+    "homepage": "https://github.com/evolution7/craft-console",
     "license": "MIT",
     "authors": [
         {
