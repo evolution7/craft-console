@@ -9,6 +9,7 @@ if (file_exists(__DIR__ . '/../../../../vendor/autoload.php')) {
 
 // Fix for console task not having URI
 $_SERVER['HTTP_X_REWRITE_URL'] = '/';
+$_SERVER['HTTP_HOST'] = 'localhost';
 
 // Yii command runner
 require_once(__DIR__ . '/../../../app/etc/console/yiic.php');
